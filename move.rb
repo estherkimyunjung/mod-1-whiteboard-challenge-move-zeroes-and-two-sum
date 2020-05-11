@@ -13,7 +13,7 @@ move_zeroes([0, 1, 0, 3, 12])
 def two_sum(numbers, target)
     numbers.each_with_index do |num1, i|
         numbers.each_with_index do |num2, j|
-            if num1 + num2 == target
+            if num1 + num2 == target && num1 < num2
                 return "{index1: #{i}, index2: #{j}}"
             end
         end
